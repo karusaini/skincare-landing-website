@@ -27,11 +27,13 @@ const Hero = () => {
           className="w-[223px] h-[220px]"
         />
       </div>
-      <div className="absolute top-[814px] left-[100px] w-[180px] h-[60px] rounded-[100px] bg-[#2D3B36] flex items-center justify-center cursor-pointer">
-        <p className="font-inter font-normal text-[20px] leading-[100%] tracking-[0] text-[#EFF5E1]">
-          Show now
-        </p>
-      </div>
+      <button
+        onClick={() => alert("Redirecting to Shop...")}
+        className="absolute top-[814px] left-[100px] w-[180px] h-[60px] rounded-full bg-[#2D3B36] text-[#EFF5E1] font-inter font-medium text-[20px] transition-all duration-300 hover:bg-[#3A4C44] hover:scale-105 shadow-lg cursor-pointer"
+      >
+        Shop Now
+      </button>
+
       <div className="absolute top-[982px] left-[-18px] w-[1955px] h-[275px]">
         <h1 className="font-inter font-extrabold text-[378px] leading-[100%] tracking-[0] uppercase text-[#2D3B36]">
           SKINCARE
@@ -45,21 +47,21 @@ const Hero = () => {
         />
       </div>
 
-      <div className="absolute top-[1117px] left-[722px] w-[476px] h-[100px] rounded-[200px] bg-[#EFF5E1]"></div>
-
-      <div className="absolute top-[1127px] left-[732px] w-[80px] h-[80px] rounded-[150px] bg-[#F8FEE5] overflow-hidden">
-        <img
-          src="/assets/plum.jpg"
-          alt="Face cream"
-          className="w-full h-full object-cover rounded-full"
-        />
-      </div>
-
-      <div className="absolute top-[1148px] left-[854px] w-[304px] h-[39px]">
-        <p className="font-inter font-normal text-[20px] leading-[100%] tracking-[0] text-[#2D3B36]">
+      <button
+        onClick={() => alert("Viewing Face Cream Details...")}
+        className="absolute top-[1117px] left-[722px] w-[476px] h-[100px] rounded-full bg-[#EFF5E1] flex items-center gap-5 px-6 transition-all duration-300 hover:bg-[#dbeacb] hover:scale-105 shadow-md"
+      >
+        <div className="w-[80px] h-[80px] rounded-full overflow-hidden bg-[#F8FEE5]">
+          <img
+            src="/assets/plum.jpg"
+            alt="Face cream"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <p className="font-inter font-normal text-[20px] text-[#2D3B36]">
           While giving you an invigorating cleansing experience.
         </p>
-      </div>
+      </button>
     </section>
   );
 };

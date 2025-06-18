@@ -21,7 +21,6 @@ const SkinCare = () => {
         </p>
       </div>
 
-      {/* Buttons */}
       <div className="cursor-pointer">
         {buttons.map((btn) => {
           const isActive = clickedButton === btn.id;

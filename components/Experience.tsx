@@ -137,7 +137,7 @@ const Experience = () => {
 
         <div className="absolute top-[1000px] left-[900px] w-[849px] h-[1081px] rounded-[30px] overflow-hidden">
           <img
-            src="/assets/skincare.png" // Replace with actual PNG file path
+            src="/assets/skincare.png"
             alt="Skincare Visual"
             className="w-full h-full object-cover"
           />
