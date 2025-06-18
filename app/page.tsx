@@ -17,14 +17,12 @@ export default function Home() {
     if (!containerRef.current) return;
     const tl = gsap.timeline({ defaults: { duration: 1, ease: "power2.out" } });
 
-    // Reveal parent container
     tl.fromTo(
       containerRef.current,
       { opacity: 0 },
       { opacity: 1, duration: 0.8 }
     );
 
-    // Fade-in individual sections
     const sections = containerRef.current.children[0].children;
     tl.fromTo(
       sections,

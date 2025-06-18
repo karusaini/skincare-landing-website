@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 
 const BodyLotion = () => {
   return (
@@ -46,131 +52,48 @@ const BodyLotion = () => {
         </p>
       </div>
 
-      <div className="absolute top-[6640px] left-[1100px] w-[600px] h-[70px] rounded-[5px] border border-[#2D3B36] bg-[#FEFFF4] flex items-center justify-between px-[30px]">
-        <p className="font-inter font-normal text-[20px] leading-[100%] tracking-[0] text-[#2D3B36]">
-          Are your products safe for sensitive skin?
-        </p>
-        <div className="w-[30px] h-[30px]">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#2D3B36"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <line x1="5" y1="12" x2="19" y2="12" />
-          </svg>
-        </div>
-      </div>
+      <div className="absolute top-[6640px] left-[1100px] w-[600px] z-10">
+        <Accordion type="single" collapsible className="space-y-4">
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="flex justify-between items-center text-left bg-[#FEFFF4] border border-[#2D3B36] px-[30px] h-[70px] rounded-[5px] text-[#2D3B36] text-[20px]">
+              Are your products safe for sensitive skin?
+            </AccordionTrigger>
+            <AccordionContent className="bg-[#FEFFF4] border border-[#2D3B36] rounded-b-[5px] px-[30px] pt-[20px] pb-[15px] text-[#525349] text-[14px] leading-[100%] tracking-[-0.05em] ">
+              Absolutely! All our products are cruelty-free, and most are vegan.
+              <br />
+              Check individual product details for specifics.
+            </AccordionContent>
+          </AccordionItem>
 
-      <div className="absolute top-[6740px] left-[1100px] w-[600px] h-[126px] rounded-[5px] border border-[#2D3B36] bg-[#FEFFF4] px-[30px] pt-[20px] pb-[15px]">
-        <div className="flex justify-between items-start">
-          <p className="font-inter font-normal text-[20px] leading-[100%] tracking-[0] text-[#2D3B36]">
-            Are your products safe for sensitive skin?
-          </p>
-          <div className="w-[30px] h-[30px]">
-            {/* Horizontal minus icon (unrotated) */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#2D3B36"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="5" y1="12" x2="19" y2="12" />
-            </svg>
-          </div>
-        </div>
+          <AccordionItem value="item-2">
+            <AccordionTrigger className="flex justify-between items-center text-left bg-[#FEFFF4] border border-[#2D3B36] px-[30px] h-[70px] rounded-[5px] text-[#2D3B36] text-[20px]">
+              What’s your return policy?
+            </AccordionTrigger>
+            <AccordionContent className="bg-[#FEFFF4] border border-[#2D3B36] rounded-b-[5px] px-[30px] pt-[20px] pb-[15px] text-[#525349] text-[14px] leading-[100%] tracking-[-0.05em]">
+              We offer a 30-day return policy on all unopened and unused
+              products.
+            </AccordionContent>
+          </AccordionItem>
 
-        <p className="mt-[20px] font-inter font-normal text-[14px] leading-[100%] tracking-[-0.05em] text-[#525349]">
-          Absolutely! All our products are cruelty-free, and most are vegan.
-          <br />
-          Check individual product details for specifics.
-        </p>
-      </div>
+          <AccordionItem value="item-3">
+            <AccordionTrigger className="flex justify-between items-center text-left bg-[#FEFFF4] border border-[#2D3B36] px-[30px] h-[70px] rounded-[5px] text-[#2D3B36] text-[20px]">
+              Do you ship internationally?
+            </AccordionTrigger>
+            <AccordionContent className="bg-[#FEFFF4] border border-[#2D3B36] rounded-b-[5px] px-[30px] pt-[20px] pb-[15px] text-[#525349] text-[14px] leading-[100%] tracking-[-0.05em]">
+              Yes, we ship worldwide! Delivery times and fees vary by location.
+            </AccordionContent>
+          </AccordionItem>
 
-      <div className="absolute top-[6900px] left-[1100px] w-[600px] h-[70px] rounded-[5px] border border-[#2D3B36] bg-[#FEFFF4] px-[30px] flex items-center justify-between">
-        {/* Text */}
-        <p className="font-inter font-normal text-[20px] leading-[100%] tracking-[0] text-[#2D3B36]">
-          What’s your return policy?
-        </p>
-
-        {/* Plus Icon */}
-        <div className="w-[30px] h-[30px] flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#2D3B36"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <line x1="5" y1="12" x2="19" y2="12" />
-          </svg>
-        </div>
-      </div>
-
-      <div className="absolute top-[7000px] left-[1100px] w-[600px] h-[70px] rounded-[5px] border border-[#2D3B36] bg-[#FEFFF4] px-[30px] flex items-center justify-between">
-        {/* Question Text */}
-        <p className="font-inter font-normal text-[20px] leading-[100%] tracking-[0] text-[#2D3B36]">
-          Do you ship internationally?
-        </p>
-
-        {/* Plus Icon */}
-        <div className="w-[30px] h-[30px] flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#2D3B36"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <line x1="5" y1="12" x2="19" y2="12" />
-          </svg>
-        </div>
-      </div>
-
-      <div className="absolute top-[7100px] left-[1100px] w-[600px] h-[70px] rounded-[5px] border border-[#2D3B36] bg-[#FEFFF4] px-[30px] flex items-center justify-between">
-        {/* Question Text */}
-        <p className="font-inter font-normal text-[20px] leading-[100%] tracking-[0] text-[#2D3B36]">
-          How do I choose the right product?
-        </p>
-
-        {/* Plus Icon */}
-        <div className="w-[30px] h-[30px] flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#2D3B36"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <line x1="5" y1="12" x2="19" y2="12" />
-          </svg>
-        </div>
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="flex justify-between items-center text-left bg-[#FEFFF4] border border-[#2D3B36] px-[30px] h-[70px] rounded-[5px] text-[#2D3B36] text-[20px]">
+              How do I choose the right product?
+            </AccordionTrigger>
+            <AccordionContent className="bg-[#FEFFF4] border border-[#2D3B36] rounded-b-[5px] px-[30px] pt-[20px] pb-[15px] text-[#525349] text-[14px] leading-[100%] tracking-[-0.05em]">
+              You can take our product quiz or contact our support for
+              personalized recommendations.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
   );

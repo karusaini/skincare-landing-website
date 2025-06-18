@@ -68,7 +68,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="absolute top-[7800px] left-[-115px] w-[2149px] h-[305px] flex items-center justify-center z-0 bg-[#2D3B36]">
+      <div className="absolute top-[7800px] left-[-115px] w-[2249px] h-[305px] flex items-center justify-center z-0 bg-[#2D3B36]">
         <p className="font-inter font-bold text-[420px] leading-[100%] tracking-[0%] uppercase text-[rgba(61,75,70,0.5)] whitespace-nowrap">
           skincare
         </p>

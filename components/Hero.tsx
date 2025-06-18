@@ -5,7 +5,6 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="relative w-full h-[400px] px-6 md:px-20 lg:px-[100px] pt-[60px] pb-[40px]">
-      {/* Paragraph (fixed position from Figma) */}
       <p
         className="absolute top-[301px] left-[100px] max-w-[335px] font-inter font-normal text-[#2D3B36] text-[20px] leading-[100%] indent-[105px]"
         style={{
@@ -16,7 +15,6 @@ const Hero = () => {
         protect, and enhance your natural glow every day.
       </p>
 
-      {/* Heading (fixed position from Figma) */}
       <h1 className="absolute top-[218px] left-[761px] w-[398px] h-[253px] font-inter font-bold text-[100px] leading-[90px] tracking-[-0.03em] uppercase text-[#2D3B36]">
         Glow
         <br />
