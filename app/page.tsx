@@ -23,7 +23,7 @@ export default function Home() {
       { opacity: 1, duration: 0.8 }
     );
 
-    const sections = containerRef.current.children[0].children;
+    const sections = containerRef.current.children;
     tl.fromTo(
       sections,
       { y: 30, opacity: 0 },
@@ -37,13 +37,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="w-[1920px] h-[9490px] relative bg-[#EFF5E1] opacity-0"
-    >
+    <div ref={containerRef} className="min-h-screen bg-[#EFF5E1] opacity-0">
       <Navbar />
       <Hero />
-      <div className="absolute top-[1400px] w-[1920px] h-[7303px] bg-[#FEFFF4]">
+      <div className="bg-[#FEFFF4]">
         <Experience />
         <Products />
         <SkinCare />
