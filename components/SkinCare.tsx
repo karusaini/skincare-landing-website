@@ -47,7 +47,7 @@ const SkinCare = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
-          <div className="group">
+          <div className="group relative">
             <div className="w-full aspect-[560/770] rounded-[20px] overflow-hidden mb-4">
               <img
                 src="/assets/alya.jpg"
@@ -55,22 +55,24 @@ const SkinCare = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="bg-[#FEFFF4] rounded-[10px] p-4 md:p-6 flex items-center justify-between">
-              <div>
-                <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] tracking-[-0.05em] text-[#2D3B36] mb-2">
-                  ALYA SKIN CLEANSER.
-                </p>
-                <p className="font-inter font-normal text-sm md:text-base lg:text-[16px] tracking-[-0.05em] text-[#2D3B36]/50">
-                  FROM $29.99
-                </p>
-              </div>
-              <div className="w-16 h-16 md:w-20 md:h-20 lg:w-[80px] lg:h-[80px] rounded-[10px] bg-[#2D3B36]/10 flex items-center justify-center cursor-pointer hover:bg-[#2D3B36]/20 transition-colors">
-                <ShoppingCart className="w-6 h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-[#2D3B36]" />
+            <div className="absolute w-full bottom-[20px] p-[20px]">
+              <div className="bg-[#FEFFF4] rounded-[10px] p-4 md:p-6 flex items-center justify-between">
+                <div>
+                  <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] tracking-[-0.05em] text-[#2D3B36] mb-2">
+                    ALYA SKIN CLEANSER.
+                  </p>
+                  <p className="font-inter font-normal text-sm md:text-base lg:text-[16px] tracking-[-0.05em] text-[#2D3B36]/50">
+                    FROM $29.99
+                  </p>
+                </div>
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-[80px] lg:h-[80px] rounded-[10px] bg-[#2D3B36]/10 flex items-center justify-center cursor-pointer hover:bg-[#2D3B36]/20 transition-colors">
+                  <ShoppingCart className="w-6 h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-[#2D3B36]" />
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="group">
+          <div className="group relative">
             <div className="w-full aspect-[560/770] rounded-[20px] overflow-hidden mb-4">
               <img
                 src="/assets/ritual.jpg"
@@ -78,22 +80,24 @@ const SkinCare = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="bg-[#FEFFF4] rounded-[10px] p-4 md:p-6 flex items-center justify-between shadow">
-              <div>
-                <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] tracking-[-0.05em] text-[#2D3B36] mb-2">
-                  RITUAL OF SAKURA.
-                </p>
-                <p className="font-inter font-normal text-sm md:text-base lg:text-[14px] tracking-[-0.05em] text-[#2D3B36]/50">
-                  FROM $27.99
-                </p>
-              </div>
-              <div className="w-16 h-16 md:w-20 md:h-20 lg:w-[80px] lg:h-[80px] rounded-[10px] bg-[#2D3B36] flex items-center justify-center cursor-pointer hover:bg-[#3A4C44] transition-colors">
-                <ShoppingCart className="w-6 h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-[#f1f8f6]" />
+            <div className="absolute w-full bottom-[20px] p-[20px]">
+              <div className="bg-[#FEFFF4] rounded-[10px] p-4 md:p-6 flex items-center justify-between shadow">
+                <div>
+                  <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] tracking-[-0.05em] text-[#2D3B36] mb-2">
+                    RITUAL OF SAKURA.
+                  </p>
+                  <p className="font-inter font-normal text-sm md:text-base lg:text-[14px] tracking-[-0.05em] text-[#2D3B36]/50">
+                    FROM $27.99
+                  </p>
+                </div>
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-[80px] lg:h-[80px] rounded-[10px] bg-[#2D3B36] flex items-center justify-center cursor-pointer hover:bg-[#3A4C44] transition-colors">
+                  <ShoppingCart className="w-6 h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-[#f1f8f6]" />
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="group md:col-span-2 lg:col-span-1">
+          <div className="group relative md:col-span-2 lg:col-span-1">
             <div className="w-full aspect-[560/770] rounded-[20px] overflow-hidden mb-4">
               <img
                 src="/assets/body.jpg"
@@ -101,17 +105,19 @@ const SkinCare = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="bg-[#FEFFF4] rounded-[10px] p-4 md:p-6 flex items-center justify-between">
-              <div>
-                <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] tracking-[-0.05em] text-[#2D3B36] mb-2">
-                  THE BODY LOTION.
-                </p>
-                <p className="font-inter font-normal text-sm md:text-base lg:text-[14px] tracking-[-0.05em] text-[#2D3B36]/50">
-                  FROM $19.99
-                </p>
-              </div>
-              <div className="w-16 h-16 md:w-20 md:h-20 lg:w-[80px] lg:h-[80px] rounded-[10px] bg-[#2D3B36]/10 flex items-center justify-center cursor-pointer hover:bg-[#2D3B36]/20 transition-colors">
-                <ShoppingCart className="w-6 h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-[#2D3B36]" />
+            <div className="absolute w-full bottom-[20px] p-[20px]">
+              <div className="bg-[#FEFFF4] rounded-[10px] p-4 md:p-6 flex items-center justify-between">
+                <div>
+                  <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] tracking-[-0.05em] text-[#2D3B36] mb-2">
+                    THE BODY LOTION.
+                  </p>
+                  <p className="font-inter font-normal text-sm md:text-base lg:text-[14px] tracking-[-0.05em] text-[#2D3B36]/50">
+                    FROM $19.99
+                  </p>
+                </div>
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-[80px] lg:h-[80px] rounded-[10px] bg-[#2D3B36]/10 flex items-center justify-center cursor-pointer hover:bg-[#2D3B36]/20 transition-colors">
+                  <ShoppingCart className="w-6 h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-[#2D3B36]" />
+                </div>
               </div>
             </div>
           </div>

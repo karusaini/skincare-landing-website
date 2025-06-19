@@ -87,32 +87,30 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-8 md:pt-12 lg:pt-16">
-              <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] leading-[100%] tracking-[-0.02em] uppercase text-[#2D3B36]">
-                since 2001
-              </p>
-              <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] leading-[100%] tracking-[-0.02em] uppercase text-[#000000] cursor-pointer hover:text-[#2D3B36] transition-colors">
-                LEARN MORE
-              </p>
-            </div>
           </div>
 
-          <div className="relative">
-            <div className="w-full max-w-2xl mx-auto lg:max-w-none aspect-[849/1081] rounded-[30px] overflow-hidden">
+          <div className="">
+            <div className="relative w-full max-w-2xl mx-auto lg:max-w-none aspect-[849/1081] rounded-[30px] overflow-hidden">
               <img
                 src="/assets/skincare.png"
                 alt="Skincare Visual"
                 className="w-full h-full object-cover"
               />
+              <div className="absolute bottom-[80px] left-1/2 transform -translate-x-1/2 flex items-center gap-4 px-6 py-4 rounded-full bg-[#EFF5E1]">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-[88px] lg:h-[88px] rounded-full border border-[#2D3B36] bg-[#EFF5E1] flex-shrink-0"></div>
+                <p className="font-inter font-normal text-sm md:text-base lg:text-[20px] leading-[100%] text-[#2D3B36]">
+                  Best Skin Care Product
+                  <br />
+                  Award Winning
+                </p>
+              </div>
             </div>
-
-            <div className="absolute -bottom-8 md:-bottom-12 lg:-bottom-16 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-0 lg:transform-none flex items-center gap-4 px-6 py-4 rounded-full bg-[#EFF5E1]">
-              <div className="w-16 h-16 md:w-20 md:h-20 lg:w-[88px] lg:h-[88px] rounded-full border border-[#2D3B36] bg-[#EFF5E1] flex-shrink-0"></div>
-              <p className="font-inter font-normal text-sm md:text-base lg:text-[20px] leading-[100%] text-[#2D3B36]">
-                Best Skin Care Product
-                <br />
-                Award Winning
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-[20px] px-[60px]">
+              <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] leading-[100%] tracking-[-0.02em] uppercase text-[#2D3B36]">
+                since 2001
+              </p>
+              <p className="font-inter font-normal text-lg md:text-xl lg:text-[20px] leading-[100%] tracking-[-0.02em] uppercase text-[#000000] cursor-pointer hover:text-[#2D3B36] transition-colors">
+                LEARN MORE
               </p>
             </div>
           </div>
